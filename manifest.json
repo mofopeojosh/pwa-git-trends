@@ -1,0 +1,15 @@
+{
+  "short_name": "",
+  "name": "Pwa Gitrend",
+  "icons": [
+    {
+      "src":"images/gt-icon192x192.png",
+      "sizes": "192X192",
+      "type": "images/png"
+    }
+  ],
+  "start_url": "/utm_source=homescreen",
+  "background_color": "#009688",
+  "theme_color": "#009688",
+  "display": "standalone"
+}
