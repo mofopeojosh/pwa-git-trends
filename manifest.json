@@ -5,10 +5,10 @@
     {
       "src":"images/gt-icon192x192.png",
       "sizes": "192X192",
-      "type": "images/png"
+      "type": "image/png"
     }
   ],
-  "start_url": "/utm_source=homescreen",
+  "start_url": "pwa-gitTrends",
   "background_color": "#009688",
   "theme_color": "#009688"
 }
