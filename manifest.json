@@ -11,4 +11,5 @@
   "start_url": "/utm_source=homescreen",
   "background_color": "#009688",
   "theme_color": "#009688",
+  "display": 'standalone"
 }
