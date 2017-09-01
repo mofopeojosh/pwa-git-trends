@@ -45,6 +45,7 @@
 	    card.querySelector('.card-lang').textContent = trend.language
 	    card.querySelector('.card-stars').textContent = trend.stargazers_count
 	    card.querySelector('.card-forks').textContent = trend.forks
+	    card.querySelector('.card-info').textContent = trend.description
 	    card.querySelector('.card-link').setAttribute('href', trend.html_url)
 	    card.querySelector('.card-link').setAttribute('target', '_blank')
 	    return card;
