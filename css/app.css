@@ -63,7 +63,7 @@
 .card {
   height: 300px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://res.cloudinary.com/mofopeojosh/image/upload/t_media_lib_thumb/v1504295144/card-bg_u6fn1b.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/card-bg.jpg");
 }
 
 .card-sub .material-icons {
