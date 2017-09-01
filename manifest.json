@@ -3,8 +3,23 @@
   "name": "Pwa Gitrend",
   "icons": [
     {
-      "src":"images/gt-icon192x192.png",
-      "sizes": "192X192",
+      "src":"images/favicon48x48.png",
+      "sizes": "48X48",
+      "type": "images/png"
+    },
+    {
+      "src":"images/favicon96x96.png",
+      "sizes": "96X96",
+      "type": "images/png"
+    },
+    {
+      "src":"images/favicon128x128.png",
+      "sizes": "128X128",
+      "type": "images/png"
+    },
+    {
+      "src":"images/favicon256x256.png",
+      "sizes": "256X256",
       "type": "images/png"
     }
   ],

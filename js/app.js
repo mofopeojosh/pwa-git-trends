@@ -52,6 +52,7 @@
 
 
 	app.getTrends = function() {
+		$('.loader').show();
 		const networkReturned = false;
 		if ('caches' in window){
 			caches.match(app.apiURL).then(function(response){
@@ -59,7 +60,11 @@
 					response.json().then(function(trends){
 						console.log('From cache...')
 						if(!networkReturned){
+							$('.errorMessage').show();
 							app.updateTrends(trends.items);
+						}
+						else{
+							$('.errorMessage').hide();
 						}
 					});
 				}
@@ -72,6 +77,8 @@
 		.then(function(trends) {
 			console.log('From server...')
 			app.updateTrends(trends.items)
+			$('.message').show().delay(3000).fadeOut();
+			$('.loader').show().delay(1000).fadeOut();
 			networkReturned = true;
 		}).catch(function(err) {
 			console.log('Could not load trends')

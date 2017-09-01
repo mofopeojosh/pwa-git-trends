@@ -3,12 +3,19 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import Google Icon Font-->
+      <link href="css/font-awesome.min.css" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/app.css">
-
+      <link rel="icon" type="image/png" sizes="48x48" href="images/favicon48x48.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="images/favicon96x96.png">
+      <link rel="icon" type="image/png" sizes="128x128" href="images/favicon128x128.png">
+      <link rel="icon" type="image/png" sizes="256x256" href="images/favicon256x256.png">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="Author" content="Mofope Ojosh is a web developer"/>
+      <meta name="description" content="PWA for Git Trends"/>
       <link rel="manifest" href="manifest.json">
       <title>Git Trends</title>
       
@@ -20,17 +27,20 @@
       <nav>
         <div class="nav-wrapper teal">
           <a href="#" class="brand-logo">
-            <svg aria-hidden="true" class="octicon navbar" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+              <i class="fa fa-github fa-lg"></i>
           </a>
           <ul class="right">
-            <li><a class="refresh"><i class="material-icons">refresh</i></a></li>
+            <li><a class="refresh"><i class="fa fa-refresh"></i></a></li>
           </ul>
         </div>
       </nav>
       <main>
         <div class="container">
-          <h5 class="header teal-text">Trending</h5>
-          
+          <p class="info center">This is a PWA that indexes the top 10 trending Github repositories. <br><span>Add to home screen:</span> In your browser, touch the overflow/menu button(usually three vertical dots) and select Add to Home Screen.  Not supported on all browsers</p>  
+        <h3 class="header center">Trending</h3>
+       <div class="loader hidden"></div>  
+       <p class="message hidden">Updated</p>   
+       <p class="errorMessage hidden">Couldn't load new trends</p>   
       <div class="row trends">
             <div class="col s12 m4 card-template">
               <div class="card horizontal">
